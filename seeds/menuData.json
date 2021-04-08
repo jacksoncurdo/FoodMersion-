@@ -1,12 +1,14 @@
 [
   {
     "name": "Lasagna",
-    "description": "is an Italian dish made of stacked layers of thin flat pasta alternating with fillings such as ragù (ground meats and tomato sauce) and other vegetables, cheese (which may include ricotta and parmesan), and seasonings and spices such as garlic, oregano and basil."
+    "description": "is an Italian dish made of stacked layers of thin flat pasta alternating with fillings such as ragù (ground meats and tomato sauce) and other vegetables, cheese (which may include ricotta and parmesan), and seasonings and spices such as garlic, oregano and basil.",
+    "prices": 10.99
    
   },
   {
     "name": "Pizza",
-    "description": "greasy, cheesy, delicious, welcoming smell, warm, crispy, crunchy, stretchy (cheese), filled with toppings, pepperoni, circle, slices!"
+    "description": "greasy, cheesy, delicious, welcoming smell, warm, crispy, crunchy, stretchy (cheese), filled with toppings, pepperoni, circle, slices!",
+    "prices": 13.99
     
   }
   
