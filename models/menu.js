@@ -36,8 +36,8 @@ Menu.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'project',
+    modelName: 'menu',
   }
 );
 
-module.exports = Project;
+module.exports = Menu;

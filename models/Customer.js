@@ -42,8 +42,8 @@ Customer.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'user',
+    modelName: 'customer',
   }
 );
 
-module.exports = User;
+module.exports =  Customer;
