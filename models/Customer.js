@@ -46,4 +46,4 @@ Customer.init(
   }
 );
 
-module.exports = User;
+module.exports = Customer;

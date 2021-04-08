@@ -40,4 +40,4 @@ Menu.init(
   }
 );
 
-module.exports = Project;
+module.exports = Menu;
