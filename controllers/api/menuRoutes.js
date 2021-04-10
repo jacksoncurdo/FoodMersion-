@@ -1,7 +1,6 @@
 const router = require('express').Router();
 const { Menu } = require('../../models');
 
-
 router.get("/", async (req, res) => {
   try {
     const menuData = await Menu.findAll({
@@ -9,7 +8,7 @@ router.get("/", async (req, res) => {
     });
     res.status(200).json(menuData);
   } catch (err) {
-    res.status(500).json(err);
+    res.status(500).json(err);s
   }
 });
 
