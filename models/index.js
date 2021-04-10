@@ -1,4 +1,5 @@
-const Customer = require('./Customer');
+
+
 const Menu = require('./Menu');
 const Starters = require('./Starters')
 // User.hasMany(Project, {
@@ -11,3 +12,4 @@ const Starters = require('./Starters')
 // });
 
 module.exports = { Menu, Customer, Starters };
+
