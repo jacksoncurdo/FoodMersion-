@@ -5,7 +5,7 @@ make reservation button send user to our res page, and on the res page we need t
 
 create a menu table or form(visual reference) for the food that we will be importing, look at the google doc and use the helper function timestamps for reference
 
- book an event will be an href for our calendly page, if we finish we can build a styled html page and put the calendly link in the body.
+book an event will be an href for our calendly page, if we finish we can build a styled html page and put the calendly link in the body.
 
 create the routes for menu, home, reservations, and 
 
