@@ -1,9 +1,6 @@
 [
-  {
-    "name": "Shrimp Cocktail",
-    "description": "",
-    "prices": 30
-  },
+
+
   {
     "name": "Fire-Roasted Asparagus",
     "description": "",
@@ -55,3 +52,5 @@
     "prices": 10.99
   }
 ]
+
+
