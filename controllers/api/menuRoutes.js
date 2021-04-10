@@ -4,7 +4,7 @@ const { Menu } = require('../../models');
 router.get("/", async (req, res) => {
   try {
     const menuData = await Menu.findAll({
-    include: [{ model : Menu }]
+  
     });
     res.status(200).json(menuData);
   } catch (err) {

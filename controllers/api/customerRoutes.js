@@ -2,6 +2,17 @@ const router = require('express').Router();
 const { Customer } = require('../../models');
 const withAuth = require('../../utils/auth');
 
+router.get("/", async (req, res) => {
+  try {
+    const customerData = await Customer.findAll({
+    });
+    res.status(200).json(customerData);
+  } catch (err) {
+    res.status(500).json(err);s
+  }
+});
+
+
 router.post('/', async (req, res) => {
   try {
     const newCustomer = await Customer.create({
