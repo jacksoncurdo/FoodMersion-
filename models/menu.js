@@ -21,6 +21,9 @@ Menu.init(
     prices: {
       type: DataTypes.INTEGER,
       allowNull: false
+     },
+     category_name: {
+      type: DataTypes.STRING,
      }
    
  
