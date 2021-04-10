@@ -1,7 +1,57 @@
 [
-    {
+  {
     "name": "Shrimp Cocktail",
     "description": "",
     "prices": 30
-    }
+  },
+  {
+    "name": "Fire-Roasted Asparagus",
+    "description": "",
+    "prices": 10.99
+  },
+  {
+    "name": "Crsipy Zucchini Fritte",
+    "description": "",
+    "prices": "10.99"
+  },
+  {
+    "name": "Bacon-Wrapped Shrimp",
+    "description": "",
+    "prices": 10.99
+  },
+  {
+    "name": "Fried Calamari",
+    "description": "Fried Light and Crisp",
+    "prices": 10.99
+  },
+  {
+    "name": "Spincah & Artichoke al Forno",
+    "description": "Creamy spinach and artichoke dip s",
+    "prices": "$12.99"
+  },
+  {
+    "name": "Seared Scallops",
+    "description": "Pan-seared scallops",
+    "prices": 10.99
+  },
+  {
+    "name": "Lobster Risoto",
+    "description": "",
+    "prices": 10.99
+  },
+  {
+    "name": "",
+    "description": "",
+    "prices": 10.99
+  },
+  {
+    "name": "Stuffed Mushrooms",
+    "description": "",
+    "prices": 10.99
+  },
+  {
+    "name": "Fig & Goat Chese Bruschetta",
+    "description": "",
+    "prices": 10.99
+  }
 ]
