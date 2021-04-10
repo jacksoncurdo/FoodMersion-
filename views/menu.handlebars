@@ -1,11 +1,14 @@
 <div class="row">
   <div class="col-auto">
+    {{!--  line below doesnt need to be dynamic. we can just put welcome message --}}
     <h2>Welcome, {{name}}!</h2>
   </div>
 </div>
 
 <div class="row mt-4">
+  {{!-- take div starting at line nine and put in reservation handlebars --}}
   <div class="col-md-6">
+    {{!-- below line can be where user suggests an item --}}
     <h3>Create a New Project:</h3>
 
     <form class="form new-project-form">
@@ -26,23 +29,31 @@
       </div>
     </form>
   </div>
-
-  {{#if projects.length}}
+{{!-- below line if menu.length --}}
+  {{#if starters.length}}
   <div class="col-md-6 project-list">
     <h3>Current Projects:</h3>
-
-    {{#each projects as |project|}}
+{{!-- replace all projects with menu --}}
+    {{#each starters as |starterItem|}}
     <div class="row mb-2">
+      <h3>
+        {{!-- ask nikki whats going on here and if we need it. how can i identify prices if the id of the item isnt dictated until four lines later --}}
+        {{starterItem.prices}}
+      </h3>
       <div class="col-md-8">
-        <h4><a href="/project/{{project.id}}">{{project.name}}</a></h4>
+        <h4>{{starterItem.name}}</h4>
       </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{project.id}}">DELETE</button>
-      </div>
+      <p>
+        {{starterItem.description}}       
+      </p>
     </div>
     {{/each}}
   </div>
   {{/if}}
+  <div>
+    {{!-- repeat lines 32 to 50 and change the name to the different thing.. lunch.. dinner..ect --}}
+  </div>
 </div>
+{{!-- how will the program know to stop at a certain item(id) and not keep repeating itself.. from starters.length? i dont need to include some type of stopping clause or incrementing of the items. --}}
 
 <script src="./js/profile.js"></script>
