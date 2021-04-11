@@ -1,25 +1,25 @@
 [
   
             {
-        "name": "Fried Calamari",
-        "description": "Fried Light and Crisp",
+        "name": "Lemonade",
+        "description": "Refreshing drink with lemon and sugar",
     
-        "prices": 10.99,
-    " category_name" : "starter"
+        "prices": 3.99,
+    "category_name" : "drink"
     },
                 {
-        "name": "Spincah & Artichoke al Forno",
-        "description": "Creamy spinach and artichoke dip s",
+        "name": "Soft drink",
+        "description": "Your choice coke, sprite, Fanta, A&W Root beer",
     
-        "prices": 12.99,
-         " category_name" : "starter"
+        "prices": 2.99,
+         "category_name" : "drink"
     },
                     {
-        "name": "Seared Scallops",
-        "description": "Pan-seared scallops",
+        "name": "Beer",
+        "description": "Budweiser, bud light, heineken, blue moon, coors",
     
-        "prices": 10.99,
-    " category_name" : "starter"
+        "prices": 7.99,
+    "category_name" : "drink"
     }
                         
       

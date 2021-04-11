@@ -18,8 +18,12 @@ Customer.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    table: {
+    phone_number: {
       type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    email: {
+      type: DataTypes.STRING,
       allowNull: false,
     },
    
