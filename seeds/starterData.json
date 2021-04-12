@@ -1,0 +1,72 @@
+[
+{
+    "name": "Fire-Roasted Asparagus",
+    "description": "Roasted asparagus",
+
+    "prices": 10.99,
+   "category_name" : "starter"
+},
+{
+    "name": "Crsipy Zucchini Fritte",
+    "description": "Crispy",
+
+    "prices": 10.99,
+"category_name" : "starter"
+},
+    {
+    "name": "Bacon-Wrapped Shrimp",
+    "description": "bacon wrapped",
+
+    "prices": 10.99,
+"category_name" : "starter"
+},
+        {
+    "name": "Fried Calamari",
+    "description": "Fried Light and Crisp",
+
+    "prices": 10.99,
+"category_name" : "starter"
+},
+            {
+    "name": "Spincah & Artichoke al Forno",
+    "description": "Creamy spinach and artichoke dip s",
+
+    "prices": 12.99,
+     "category_name" : "starter"
+},
+                {
+    "name": "Seared Scallops",
+    "description": "Pan-seared scallops",
+
+    "prices": 10.99,
+"category_name" : "starter"
+},
+                    
+  {
+    "name": "Lobster Risoto",
+    "description": "lobster",
+  
+    "prices": 10.99,
+"category_name" : "starter"
+},
+                        {
+    "name": "Mozzarella ",
+    "description": "cheese",
+  
+    "prices": 10.99,
+"category_name" : "starter"
+},
+                            {
+    "name": "Stuffed Mushrooms",
+    "description": "mushroom",
+    "prices": 10.99,
+"category_name" : "starter"
+},
+                                {
+    "name": "Fig & Goat Chese Bruschetta",
+    "description": "crispy",
+
+    "prices": 10.99,
+    "category_name" : "starter"
+                                }
+]

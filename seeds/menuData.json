@@ -1,85 +1,14 @@
 [
     {
         "name": "Lasagna",
-        "description": "is an Italian dish made of stacked layers of thin flat pasta alternating with fillings such as ragù (ground meats and tomato sauce) and other vegetables, cheese (which may include ricotta and parmesan), and seasonings and spices such as garlic, oregano and basil.",
+        "description": "is an Italian dish made of stacked layers of thin flat pasta alternating with fillings such as ragù .",
         "prices": 10.99,
-        " category_name" : "entree"
+        "category_name" : "entree"
       },
       {
         "name": "Pizza",
         "description": "greasy, cheesy, delicious, welcoming smell, warm, crispy, crunchy, stretchy (cheese), filled with toppings, pepperoni, circle, slices!",
         "prices": 13.99,
-        " category_name" : "entree"
-      },
-    
-      {
-          "name": "Fire-Roasted Asparagus",
-          "description": "",
-      
-          "prices": 10.99,
-         " category_name" : "starter"
-      },
-      {
-          "name": "Crsipy Zucchini Fritte",
-          "description": "",
- 
-          "prices": "10.99",
-     " category_name" : "starter"
-      },
-          {
-          "name": "Bacon-Wrapped Shrimp",
-          "description": "",
-   
-          "prices": 10.99,
-     " category_name" : "starter"
-      },
-              {
-          "name": "Fried Calamari",
-          "description": "Fried Light and Crisp",
-   
-          "prices": 10.99,
-     " category_name" : "starter"
-      },
-                  {
-          "name": "Spincah & Artichoke al Forno",
-          "description": "Creamy spinach and artichoke dip s",
-      
-          "prices": "$12.99",
-           " category_name" : "starter"
-      },
-                      {
-          "name": "Seared Scallops",
-          "description": "Pan-seared scallops",
-    
-          "prices": 10.99,
-     " category_name" : "starter"
-      },
-                          
-        {
-          "name": "Lobster Risoto",
-          "description": "",
-        
-          "prices": 10.99,
-     " category_name" : "starter"
-      },
-                              {
-          "name": "Mozzarella ",
-          "description": "",
-        
-          "prices": 10.99,
-     " category_name" : "starter"
-      },
-                                  {
-          "name": "Stuffed Mushrooms",
-          "description": "",
-          "prices": 10.99,
-     " category_name" : "starter"
-      },
-                                      {
-          "name": "Fig & Goat Chese Bruschetta",
-          "description": "",
-    
-          "prices": 10.99,
-          " category_name" : "starter"
-                                      }
+        "category_name" : "entree"
+      }
     ] 

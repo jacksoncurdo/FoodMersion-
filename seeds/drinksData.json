@@ -1,0 +1,26 @@
+[
+  
+            {
+        "name": "Lemonade",
+        "description": "Refreshing drink with lemon and sugar",
+    
+        "prices": 3.99,
+    "category_name" : "drink"
+    },
+                {
+        "name": "Soft drink",
+        "description": "Your choice coke, sprite, Fanta, A&W Root beer",
+    
+        "prices": 2.99,
+         "category_name" : "drink"
+    },
+                    {
+        "name": "Beer",
+        "description": "Budweiser, bud light, heineken, blue moon, coors",
+    
+        "prices": 7.99,
+    "category_name" : "drink"
+    }
+                        
+      
+    ]

@@ -1,6 +1,8 @@
 
 const Customer = require('./Customer')
 const Menu = require('./Menu');
+const Starter = require('./Starter');
+const Drinks = require('./Drinks');
 
 // User.hasMany(Project, {
 //   foreignKey: 'user_id',
@@ -11,5 +13,5 @@ const Menu = require('./Menu');
 //   foreignKey: 'user_id'
 // });
 
-module.exports = { Menu, Customer };
+module.exports = { Menu, Customer, Starter, Drinks };
 
