@@ -1,7 +1,7 @@
 [
   {
     "name": "Bang-Bang Chicken and Shrimp",
-    "description": "A spicy thai dish with flavors of curry, peanut, chile and cocunut. Sauteed with vegetables and served over steamed white rice",
+    "description": "A spicy thai dish with flavors of curry, peanut, chile and coconut. Sauteed with vegetables and served over steamed white rice",
     "prices": 14.99,
     "category_name": "entree"
   },
@@ -55,7 +55,7 @@
   },
   {
     "name": "Spicy Cashew Chicken",
-    "description": "A very spicy Mandarin-style dish with green onions and roasted caashews. Served over white rice",
+    "description": "A very spicy Mandarin-style dish with green onions and roasted cashews. Served over white rice",
     "prices": 16.99,
     "category_name": "entree"
   },
