@@ -3,6 +3,10 @@ const { Drinks } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 router.get("/", async (req, res) => {
+  res.render('menu', {
+  })});
+
+router.get("/", async (req, res) => {
   try {
     DrinksData = await Drinks.findAll({
     });
