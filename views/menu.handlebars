@@ -1,59 +1,70 @@
 <div class="row">
   <div class="col-auto">
-    {{!--  line below doesnt need to be dynamic. we can just put welcome message --}}
-    <h2>Welcome, {{name}}!</h2>
+    <h2>Welcome to FoodMersion!</h2>
   </div>
 </div>
 
 <div class="row mt-4">
-  {{!-- take div starting at line nine and put in reservation handlebars --}}
-  <div class="col-md-6">
-    {{!-- below line can be where user suggests an item --}}
-    <h3>Create a New Project:</h3>
-
-    <form class="form new-project-form">
-      <div class="form-group">
-        <label for="project-name">project name:</label>
-        <input class="form-input" type="text" id="project-name" name="project-name" />
-      </div>
-      <div class="form-group">
-        <label for="project-funding">needed funding ($):</label>
-        <input class="form-input" type="number" id="project-funding" name="project-funding" />
-      </div>
-      <div class="form-group">
-        <label for="project-desc">description:</label>
-        <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
-      </div>
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
-      </div>
-    </form>
-  </div>
-{{!-- below line if menu.length --}}
-  {{#if starters.length}}
+  {{#if drinksData.length}}
   <div class="col-md-6 project-list">
-    <h3>Current Projects:</h3>
-{{!-- replace all projects with menu --}}
-    {{#each starters as |starterItem|}}
+    <h3>Drinks</h3>
+    {{#each drinksData as |drinks|}}
     <div class="row mb-2">
       <h3>
-        {{!-- ask nikki whats going on here and if we need it. how can i identify prices if the id of the item isnt dictated until four lines later --}}
-        {{starterItem.prices}}
+        {{drinks.prices}}
       </h3>
       <div class="col-md-8">
-        <h4>{{starterItem.name}}</h4>
+        <h4>{{drinks.name}}</h4>
       </div>
       <p>
-        {{starterItem.description}}       
+        {{drinks.description}}       
       </p>
     </div>
     {{/each}}
   </div>
   {{/if}}
-  <div>
-    {{!-- repeat lines 32 to 50 and change the name to the different thing.. lunch.. dinner..ect --}}
-  </div>
 </div>
-{{!-- how will the program know to stop at a certain item(id) and not keep repeating itself.. from starters.length? i dont need to include some type of stopping clause or incrementing of the items. --}}
+
+<div class="row mt-4">
+  {{#if menuData.length}}
+  <div class="col-md-6 project-list">
+    <h3>Entrees</h3>
+    {{#each menuData as |entree|}}
+    <div class="row mb-2">
+      <h3>
+      {{entree.prices}}
+      </h3>
+      <div class="col-md-8">
+        <h4>{{entree.name}}</h4>
+      </div>
+      <p>
+        {{entree.description}}       
+      </p>
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}
+</div>
+
+<div class="row mt-4">
+  {{#if drinksData.length}}
+  <div class="col-md-6 project-list">
+    <h3>Starters</h3>
+    {{#each starterData as |starters|}}
+    <div class="row mb-2">
+      <h3>
+        {{starters.prices}}
+      </h3>
+      <div class="col-md-8">
+        <h4>{{starters.name}}</h4>
+      </div>
+      <p>
+        {{starters.description}}       
+      </p>
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}  
+</div>
 
 <script src="./js/profile.js"></script>

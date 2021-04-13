@@ -1,4 +1,4 @@
-const newFormHandler = async (event) => {
+const viewMenu = async (event) => {
   event.preventDefault();
 
   const name = document.querySelector('#project-name').value.trim();
@@ -22,7 +22,7 @@ const newFormHandler = async (event) => {
   }
 };
 
-const delButtonHandler = async (event) => {
+const makeReservation = async (event) => {
   if (event.target.hasAttribute('data-id')) {
     const id = event.target.getAttribute('data-id');
 
