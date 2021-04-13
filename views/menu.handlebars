@@ -5,7 +5,7 @@
 </div>
 
 <div class="row mt-4">
-  {{#if drinksData.length}}
+   {{drinksData}} 
   <div class="col-md-6 project-list">
     <h3>Drinks</h3>
     {{#each drinksData as |drinks|}}
@@ -22,11 +22,11 @@
     </div>
     {{/each}}
   </div>
-  {{/if}}
+  
 </div>
 
 <div class="row mt-4">
-  {{#if menuData.length}}
+  {{#if menuData}}
   <div class="col-md-6 project-list">
     <h3>Entrees</h3>
     {{#each menuData as |entree|}}
@@ -47,7 +47,7 @@
 </div>
 
 <div class="row mt-4">
-  {{#if drinksData.length}}
+  {{#if starterData}}
   <div class="col-md-6 project-list">
     <h3>Starters</h3>
     {{#each starterData as |starters|}}
@@ -67,4 +67,4 @@
   {{/if}}  
 </div>
 
-<script src="./js/profile.js"></script>
+<script src="./js/index.js"></script>
