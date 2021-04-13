@@ -1,8 +1,18 @@
 const router = require('express').Router();
+<<<<<<< HEAD
 const { Menu } = require('../models');
 const { Starter } = require('../models');
 const { Drinks } = require('../models');
 
+=======
+
+router.get('/menu', async (req, res) => {
+  res.render('menu', {
+  
+    })});
+
+   
+>>>>>>> 334b9ea1f4908f6f4cbbc14cffffd46dcffdf374
 router.get('/', async (req, res) => {
 res.render('homepage', {
 
@@ -132,4 +142,30 @@ res.render('homepage', {
 
 
 
+<<<<<<< HEAD
 module.exports = router;
+=======
+  // router.get('/', async (req, res) => {
+  //   try {
+  // menuData = await Menu.findAll({
+  //       include: [
+  //         {
+  //           model: Menu,
+  //           attributes: ['name', 'description', 'prices'],
+  //         },
+  //       ],
+  //     });
+  //     const menus = menuData.map((menu) =>
+  //       menu.get({ plain: true })
+  //     );
+  //     res.render('menu', {
+  //       menus,
+  //     });
+  //   } catch (err) {
+  //     console.log(err);
+  //     res.status(500).json(err);
+  //   }
+  // });
+
+module.exports = router; 
+>>>>>>> 334b9ea1f4908f6f4cbbc14cffffd46dcffdf374

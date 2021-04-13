@@ -81,9 +81,43 @@ const { Menu, Starter, Drinks } = require('../../models');
   
 // });
 
+<<<<<<< HEAD
 
 
 
+=======
+// router.get("/", async (req, res) => {
+//   try {
+//     const menuData = await Menu.findAll({
+  
+//     });
+//     res.status(200).json(menuData);
+//   } catch (err) {
+//     res.status(500).json(err);s
+//   }
+// });
+router.get('/', async (req, res) => {
+  try {
+menuData = await Menu.findAll({
+      include: [
+        {
+          model: Menu,
+          attributes: ['name', 'description', 'prices'],
+        },
+      ],
+    });
+    const menus = menuData.map((menu) =>
+      menu.get({ plain: true })
+    );
+    res.render('menu', {
+      menus,
+    });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+>>>>>>> 334b9ea1f4908f6f4cbbc14cffffd46dcffdf374
 
 
 router.post('/', async (req, res) => {

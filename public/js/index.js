@@ -21,6 +21,14 @@
 //     }
 //   }
 // };
+<<<<<<< HEAD
+=======
+document.querySelector(".menuNav").addEventListener("click", function () {
+fetch('/menu',{
+  method: "GET",    
+  })
+}
+>>>>>>> 334b9ea1f4908f6f4cbbc14cffffd46dcffdf374
 
 // const makeReservation = async (event) => {
 //   if (event.target.hasAttribute('data-id')) {
@@ -44,4 +52,8 @@
 
 // document
 //   .querySelector('.project-list')
+<<<<<<< HEAD
 //   .addEventListener('click', delButtonHandler);
+=======
+//   .addEventListener('click', delButtonHandler);
+>>>>>>> 334b9ea1f4908f6f4cbbc14cffffd46dcffdf374
