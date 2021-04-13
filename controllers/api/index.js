@@ -4,9 +4,9 @@ const menuRoutes = require('./menuRoutes');
 const starterRoutes = require('./starterRoutes');
 const drinksRoutes = require('./drinksRoutes');
 
-router.use('/reservation', customerRoutes);
-router.use('/menu', starterRoutes);
+router.use('/reservations', customerRoutes);
 router.use('/menu', menuRoutes);
-router.use('/menu', drinksRoutes);
+router.use('/menu', menuRoutes);
+router.use('/menu', menuRoutes);
 
 module.exports = router;
