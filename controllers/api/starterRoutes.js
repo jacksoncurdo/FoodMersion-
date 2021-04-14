@@ -2,19 +2,19 @@ const router = require('express').Router();
 const { Starter } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-router.get("/", async (req, res) => {
-  res.render('menu', {
-  })});
+// router.get("/", async (req, res) => {
+//   res.render('menu', {
+//   })});
 
-router.get("/", async (req, res) => {
-  try {
-    const starterData = await Starter.findAll({
-    });
-    res.status(200).json(starterData);
-  } catch (err) {
-    res.status(500).json(err);s
-  }
-});
+// router.get("/", async (req, res) => {
+//   try {
+//     const starterData = await Starter.findAll({
+//     });
+//     res.status(200).json(starterData);
+//   } catch (err) {
+//     res.status(500).json(err);s
+//   }
+// });
 
 
 router.post('/', async (req, res) => {
