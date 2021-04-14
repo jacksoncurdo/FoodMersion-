@@ -1,34 +1,28 @@
-// const viewMenu = async (event) => {
-//   event.preventDefault();
+const viewMenu = async (event) => {
+  event.preventDefault();
 
 //   const name = document.querySelector('#project-name').value.trim();
 //   const needed_funding = document.querySelector('#project-funding').value.trim();
 //   const description = document.querySelector('#project-desc').value.trim();
 
-//   if (name && needed_funding && description) {
-//     const response = await fetch(`/api/projects`, {
-//       method: 'POST',
-//       body: JSON.stringify({ name, needed_funding, description }),
-//       headers: {
-//         'Content-Type': 'application/json',
-//       },
-//     });
+//   if (name && prices && description) {
+    const response = await fetch(`/api/menu`, {
+      method: 'GET',
+      body: JSON.stringify({name,  prices, description }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
 
-//     if (response.ok) {
-//       document.location.replace('/profile');
-//     } else {
-//       alert('Failed to create project');
-//     }
-//   }
-// };
-<<<<<<< HEAD
-=======
-document.querySelector(".menuNav").addEventListener("click", function () {
-fetch('/menu',{
-  method: "GET",    
-  })
-}
->>>>>>> 334b9ea1f4908f6f4cbbc14cffffd46dcffdf374
+    if (response.ok) {
+       
+        res.render('menu' , resonse)
+    } else {
+      alert('Failed to create project');
+    }
+  }
+
+
 
 // const makeReservation = async (event) => {
 //   if (event.target.hasAttribute('data-id')) {
@@ -52,8 +46,4 @@ fetch('/menu',{
 
 // document
 //   .querySelector('.project-list')
-<<<<<<< HEAD
 //   .addEventListener('click', delButtonHandler);
-=======
-//   .addEventListener('click', delButtonHandler);
->>>>>>> 334b9ea1f4908f6f4cbbc14cffffd46dcffdf374

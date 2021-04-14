@@ -6,7 +6,7 @@ const drinksRoutes = require('./drinksRoutes');
 
 router.use('/reservations', customerRoutes);
 router.use('/menu', menuRoutes);
-router.use('/menu', menuRoutes);
-router.use('/menu', menuRoutes);
+// router.use('/menu', menuRoutes);
+// router.use('/menu', menuRoutes);
 
 module.exports = router;

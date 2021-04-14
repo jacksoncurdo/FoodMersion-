@@ -1,171 +1,139 @@
 const router = require('express').Router();
-<<<<<<< HEAD
 const { Menu } = require('../models');
 const { Starter } = require('../models');
 const { Drinks } = require('../models');
 
-=======
-
-router.get('/menu', async (req, res) => {
-  res.render('menu', {
-  
-    })});
-
-   
->>>>>>> 334b9ea1f4908f6f4cbbc14cffffd46dcffdf374
 router.get('/', async (req, res) => {
 res.render('homepage', {
 
   })});
-
-  router.get("/menu", async (req, res) => {
-    try {
-      const starterData = await Starter.findAll({
-      });
-      // res.status(200).json(starterData);
-      DrinksData = await Drinks.findAll({
-      });
-      // res.status(200).json(DrinksData);
-      const menuData = await Menu.findAll({
-     
-      });
-   res.status(200).json({menuData,  starterData , DrinksData});
-     res.render('menu', {menuData,  starterData , DrinksData} )
-
-     //     )});
-    } catch (err) {
-      res.status(500).json(err);
-    }
-  });
-// router.get('/menu', async (req, res) => {
-//   res.render('menu', {menus} 
-
-//     )});
-
-// router.get('/menu',  (req, res) => {
-
-//     const menuData =  Menu.findAll({
-
-//       include: [
-//         {
-//           model: Menu,
-//           attributes: ['name', 'description', 'prices'],
-//         },
-//       ],
-     
-//     })
-
-
+  router.get('/menu', async (req, res) => {
+  //   fetch('/api/menu')
+  // .then(response => {
+  //   console.log(response.json())
+  //   response.json()})
+  // .then(data => res.render('menu', (data))
+  try {
+    const starterData = await Starter.findAll({
+      // include: [
+      //           {
+      //             model: Starter,
+      //             attributes: ['name', 'description', 'prices'],
+      //           },
+      //         ],
+    });
+   
+    // res.status(200).json(starterData);
+    DrinksData = await Drinks.findAll({
+      // include: [
+      //           {
+      //             model: Drinks,
+      //             attributes: ['name', 'description', 'prices'],
+      //           },
+      //         ],
+    });
+   
+    // res.status(200).json(DrinksData);
+    const menuData = await Menu.findAll({
+      // include: [
+      //           {
+      //             model: Menu,
+      //             attributes: ['name', 'description', 'prices'],
+      //           },
+      //         ],
+   
+    });
+   let menus = menuData.map((project) => project.get({ plain: true }));
+   console.log(menus);
+    let starters = starterData.map((project) => project.get({ plain: true }));
+  let drinks = DrinksData.map((project) => project.get({ plain: true }));
+res.render('menu',{ menus, starters, drinks});
+  } catch (err){throw err}
+});
+ 
   
     
-//     const menus = menuData.map((menu) =>
-//     menu.get({ plain: true })
-//   )
-  
-//     res.render('menu',{ menus})
-      
-  
- 
-// });
+    
 
+ router.get("/menu", async (req, res) => {
+  const response = await fetch(`/api/menu`, {
+    method: 'GET',
+    body: JSON.stringify({name,  prices, description }),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
 
+  if (response.ok) {
+     
+      res.render('menu' , response)
+  } else {
+    alert('Failed to create project');
+  }
+});
 
-// router.get('/reservations', async (req, res) => {
-//   res.render('reservation', {
+//   router.get("/menu", async (req, res) => {
+//     try {
+//       const starterData = await Starter.findAll({
+//         // include: [
+//         //           {
+//         //             model: Starter,
+//         //             attributes: ['name', 'description', 'prices'],
+//         //           },
+//         //         ],
+//       });
+     
+//       // res.status(200).json(starterData);
+//       DrinksData = await Drinks.findAll({
+//         // include: [
+//         //           {
+//         //             model: Drinks,
+//         //             attributes: ['name', 'description', 'prices'],
+//         //           },
+//         //         ],
+//       });
+     
+//       // res.status(200).json(DrinksData);
+//       const menuData = await Menu.findAll({
+//         // include: [
+//         //           {
+//         //             model: Menu,
+//         //             attributes: ['name', 'description', 'prices'],
+//         //           },
+//         //         ],
+     
+//       });
+//     //  let menus = menuData.map((project) => project.get({ plain: true }));
+//     //   menus += starterData.map((project) => project.get({ plain: true }));
+//     //    menus += DrinksData.map((project) => project.get({ plain: true }));
+//   var menu = res.status(200).json({menuData,  starterData , DrinksData});
+//  var menus = menu.map((project) => project.get({ plain: true }));
+//    res.render('menu', menus )
 
-//   })
-// });
-
-// router.get('/menu', (req, res) => {
-//   try {
-//     menuData = Menu.findAll({
-//       include: [
-//         {
-//           model: Menu,
-//           attributes: ['name', 'description', 'prices'],
-//         },
-//       ],
-
-//     });
-
-//     const menus = menuData.map((menu) =>
-//       menu.get({ plain: true })
-//     );
-
-//     res.render('menu', {
-//       menus,
-
-//     })
-
-//   } catch (err) {
-//     console.log(err);
-//     res.status(500).json(err);
-//   }
-// });
-
-// router.get('/menu', (req, res) => {
-//   try {
-//     starterData = Starter.findAll({
-//       include: [
-//         {
-//           model: Starter,
-//           attributes: ['name', 'description', 'prices'],
-//         },
-//       ],
-
-//     });
-
-//     const starters = starterData.map((starter) =>
-//       starter.get({ plain: true })
-//     );
-
-//     res.render('menu', {
-//       starters,
-
-//     })
-
-//   } catch (err) {
-//     console.log(err);
-//     res.status(500).json(err);
-//   }
-// });
+//          }
+//      catch (err) {
+//       res.status(500).json(err);
+//     }
+//   });
 
 // router.get("/menu", async (req, res) => {
-//   try {
-//     DrinksData = await Drinks.findAll({
-//     });
-//     res.status(200).json(DrinksData);
-//   } catch (err) {
-//     res.status(500).json(err); s
-//   }
+// const response = await fetch(`/api/menu`, {
+//   method: 'GET',
+//   body: JSON.stringify({name,  prices, description }),
+//   headers: {
+//     'Content-Type': 'application/json',
+//   },
+// });
+
+// if (response.ok) {
+   
+//     res.render('menu' ,)
+// } else {
+//   alert('Failed to create project');
+// }
 // });
 
 
 
-<<<<<<< HEAD
-module.exports = router;
-=======
-  // router.get('/', async (req, res) => {
-  //   try {
-  // menuData = await Menu.findAll({
-  //       include: [
-  //         {
-  //           model: Menu,
-  //           attributes: ['name', 'description', 'prices'],
-  //         },
-  //       ],
-  //     });
-  //     const menus = menuData.map((menu) =>
-  //       menu.get({ plain: true })
-  //     );
-  //     res.render('menu', {
-  //       menus,
-  //     });
-  //   } catch (err) {
-  //     console.log(err);
-  //     res.status(500).json(err);
-  //   }
-  // });
 
-module.exports = router; 
->>>>>>> 334b9ea1f4908f6f4cbbc14cffffd46dcffdf374
+module.exports = router;

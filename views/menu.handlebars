@@ -5,43 +5,30 @@
 </div>
 
 <div class="row mt-4">
-<<<<<<< HEAD
-
-=======
-   {{drinksData}} 
->>>>>>> 334b9ea1f4908f6f4cbbc14cffffd46dcffdf374
   <div class="col-md-6 project-list">
     <h3>Drinks</h3>
-    {{#each DrinksData as |drinks|}}
+    {{#each drinks as |drink|}}
     <div class="row mb-2">
       <h3>
-        {{drinks.prices}}
+        {{drink.prices}}
       </h3>
       <div class="col-md-8">
-        <h4>{{drinks.name}}</h4>
+        <h4>{{drink.name}}</h4>
       </div>
       <p>
-        {{drinks.description}}       
+        {{drink.description}}       
       </p>
     </div>
     {{/each}}
   </div>
-<<<<<<< HEAD
 
 </div>
 
 <div class="row mt-4">
 
-=======
-  
-</div>
-
-<div class="row mt-4">
-  {{#if menuData}}
->>>>>>> 334b9ea1f4908f6f4cbbc14cffffd46dcffdf374
   <div class="col-md-6 project-list">
     <h3>Entrees</h3>
-    {{#each menuData as |entree|}}
+    {{#each menus as |entree|}}
     <div class="row mb-2">
       <h3>
       {{entree.prices}}
@@ -59,28 +46,23 @@
 </div>
 
 <div class="row mt-4">
-<<<<<<< HEAD
-
-=======
-  {{#if starterData}}
->>>>>>> 334b9ea1f4908f6f4cbbc14cffffd46dcffdf374
   <div class="col-md-6 project-list">
     <h3>Starters</h3>
-    {{#each starterData as |starters|}}
+    {{#each starters as |starter|}}
     <div class="row mb-2">
       <h3>
-        {{starters.prices}}
+        {{starter.prices}}
       </h3>
       <div class="col-md-8">
-        <h4>{{starters.name}}</h4>
+        <h4>{{starter.name}}</h4>
       </div>
       <p>
-        {{starters.description}}       
+        {{starter.description}}       
       </p>
     </div>
     {{/each}}
   </div>
-  {{/if}}  
+
 </div>
 
-<script src="./js/index.js"></script>
+{{!-- <script src="../public/js/index.js"></script> --}}
