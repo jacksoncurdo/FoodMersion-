@@ -76,6 +76,10 @@ router.get('/reservations', async (req, res) => {
   res.render('reservations', {
     
     })});
+    router.get('/login', async (req, res) => {
+      res.render('login', {
+        
+        })});
 
 //   router.get("/menu", async (req, res) => {
 //     try {
