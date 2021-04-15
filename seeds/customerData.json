@@ -3,7 +3,7 @@
     "name": "Sal",
     "phone_number": 1234567896,
     "email": "sal@email.com",
-    "reservatio_date_time": "5:00pm",
+    "reservation_time": "5:00pm",
     "reservation_date": "11/07/202"
  },
   {

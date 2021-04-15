@@ -2,6 +2,7 @@ const router = require('express').Router();
 const { Menu } = require('../models');
 const { Starter } = require('../models');
 const { Drinks } = require('../models');
+const { Customer } = require('../models');
 
 router.get('/', async (req, res) => {
 res.render('homepage', {
@@ -33,25 +34,19 @@ res.render('menu',{ menus, starters, drinks});
 });
  
   
-    
-    
+router.get('/info', async (req, res) => {
 
- router.get("/menu", async (req, res) => {
-  const response = await fetch(`/api/menu`, {
-    method: 'GET',
-    body: JSON.stringify({name,  prices, description }),
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  });
-
-  if (response.ok) {
-     
-      res.render('menu' , response)
-  } else {
-    alert('Failed to create project');
-  }
+  try {
+    const customerData = await Customer.findAll({
+  
+    });
+    let customers = customerData.map((project) => project.get({ plain: true }));
+    res.render('info',{customers });
+  } catch (err){throw err}
 });
+
+
+ 
 
 router.get('/reservations', async (req, res) => {
   res.render('reservations', {
