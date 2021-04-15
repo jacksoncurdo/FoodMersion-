@@ -26,7 +26,14 @@ Customer.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-   
+    reservation_date: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    reservation_time: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     
   },
   {
