@@ -13,18 +13,23 @@ router.get("/", async (req, res) => {
 });
 
 
-router.post('/', async (req, res) => {
+router.post('/reservations', async (req, res) => {
   try {
-    const newCustomer = await Customer.create({
+   let newCustomer = await Customer.create({
       ...req.body,
       // id: req.session.id,
+      
     });
-
+    // let dataStorage = JSON.parse(fs.readFileSync("./seeds/customerData.json", "utf8"));
+    // dataStorage.push(NewBodyInfo)
+    // fs.writeFileSync('./seeds/customerData.json', JSON.stringify(dataStorage));
     res.status(200).json(newCustomer);
   } catch (err) {
     res.status(400).json(err);
   }
 });
+
+
 
 router.delete('/:id', async (req, res) => {
   try {
