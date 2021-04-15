@@ -72,6 +72,11 @@ res.render('menu',{ menus, starters, drinks});
   }
 });
 
+router.get('/reservations', async (req, res) => {
+  res.render('reservations', {
+    
+    })});
+
 //   router.get("/menu", async (req, res) => {
 //     try {
 //       const starterData = await Starter.findAll({

@@ -1,49 +1,47 @@
-const viewMenu = async (event) => {
-  event.preventDefault();
+const submitBtn = document.querySelector('.submit');
+  submitBtn.addEventListener('click', (e) => {
+    e.preventDefault();
 
-//   const name = document.querySelector('#project-name').value.trim();
-//   const needed_funding = document.querySelector('#project-funding').value.trim();
-//   const description = document.querySelector('#project-desc').value.trim();
+    // Grab form elements
+    let newReservation = {
+      "name": document.getElementById('reserve-name').value.trim(),
+      "phone_number": document.getElementById('reserve-phone').value.trim(),
+      "email": document.getElementById('reserve-email').value.trim(),
+      // customerID: document.getElementById('reserve-unique-id').value.trim(),
+    };
 
-//   if (name && prices && description) {
-    const response = await fetch(`/api/menu`, {
-      method: 'GET',
-      body: JSON.stringify({name,  prices, description }),
+    console.log('submitBtn.onclick -> newReservation', newReservation);
+
+    // Here we make our fetch by providing a URL, the object we want to send as the body object, then we have a "promise".
+    // The promise is the response of the server. In our case, we set up code in api-routes that "returns" true or false
+    // depending on if a tables is available or not.
+
+    fetch('/api/reservations', {
+      method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-    });
+      body: JSON.stringify(newReservation),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data) {
+          // If a table is available... tell user they are booked.
 
-    if (response.ok) {
-       
-        res.render('menu' , resonse)
-    } else {
-      alert('Failed to create project');
-    }
-  }
+          alert('Yay! You are officially booked!');
+        } else {
+          // Otherwise, tell the  user they are on the wait list
 
+          alert('Sorry you are on the wait list');
 
-
-// const makeReservation = async (event) => {
-//   if (event.target.hasAttribute('data-id')) {
-//     const id = event.target.getAttribute('data-id');
-
-//     const response = await fetch(`/api/projects/${id}`, {
-//       method: 'DELETE',
-//     });
-
-//     if (response.ok) {
-//       document.location.replace('/profile');
-//     } else {
-//       alert('Failed to delete project');
-//     }
-//   }
-// };
-
-// document
-//   .querySelector('.new-project-form')
-//   .addEventListener('submit', newFormHandler);
-
-// document
-//   .querySelector('.project-list')
-//   .addEventListener('click', delButtonHandler);
+          // Clear the form
+          document.getElementById('reserve-name').value = '';
+          document.getElementById('reserve-phone').value = '';
+          document.getElementById('reserve-email').value = '';
+          // document.getElementById('reserve-unique-id').value = '';
+        }
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+  });
