@@ -2,26 +2,30 @@
   {
     "name": "Sal",
     "phone_number": 1234567896,
-    "email": "sal@email.com"
-  
-  },
+    "email": "sal@email.com",
+    "reservatio_date_time": "5:00pm",
+    "reservation_date": "11/07/202"
+ },
   {
     "name": "joe",
     "phone_number": 1298257896,
-    "email": "joe@email.com"
-    
+    "email": "joe@email.com",
+    "reservation_time": "5:00pm",
+    "reservation_date": "11/07/202"
   }, 
    {
     "name": "mary",
     "phone_number": 1234534896,
-    "email": "mary@email.com"
-    
+    "email": "mary@email.com",
+    "reservation_time": "5:00pm",
+    "reservation_date": "11/07/202"
   },
   {
     "name": "andy",
     "phone_number": 1234324896,
-    "email": "andy@email.com"
-    
+    "email": "andy@email.com",
+    "reservation_time": "5:00pm",
+    "reservation_date": "11/07/202"
   }
   
 ]
