@@ -58,7 +58,10 @@ router.get('/reservations', async (req, res) => {
     
     })});
 
-
+    router.get('/login', async (req, res) => {
+      res.render('login', {
+        
+        })});
 
 
 
