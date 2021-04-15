@@ -23,3 +23,11 @@ header, .project:not(:last-child) {
   margin-left: -5px;
 }
 
+body{
+  background-color: lightslategray;
+  color:white;
+  font-family: serif;
+  text-align: center;
+
+}
+

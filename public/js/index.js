@@ -1,12 +1,12 @@
-const submitBtn = document.querySelector('.submit');
-  submitBtn.addEventListener('click', (e) => {
+const submitBtn = document.querySelector('.reservation-form');
+  submitBtn.addEventListener('submit', (e) => {
     e.preventDefault();
-
+alert("clicked")
     // Grab form elements
     let newReservation = {
-      "name": document.getElementById('reserve-name').value.trim(),
-      "phone_number": document.getElementById('reserve-phone').value.trim(),
-      "email": document.getElementById('reserve-email').value.trim(),
+      name: document.getElementById('reserve-name').value.trim(),
+      phone_number: document.getElementById('reserve-phone').value.trim(),
+      email: document.getElementById('reserve-email').value.trim(),
       // customerID: document.getElementById('reserve-unique-id').value.trim(),
     };
 
