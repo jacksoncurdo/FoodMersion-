@@ -2,19 +2,7 @@ const router = require('express').Router();
 const { Drinks } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-// router.get("/", async (req, res) => {
-//   res.render('menu', {
-//   })});
 
-// router.get("/", async (req, res) => {
-//   try {
-//     DrinksData = await Drinks.findAll({
-//     });
-//     res.status(200).json(DrinksData);
-//   } catch (err) {
-//     res.status(500).json(err);s
-//   }
-// });
 
 
 router.post('/', async (req, res) => {
