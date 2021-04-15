@@ -12,17 +12,13 @@ router.get("/", async (req, res) => {
   }
 });
 
-
-router.post('/reservations', async (req, res) => {
+// /api/reservations
+router.post('/', async (req, res) => {
+  console.log('17', req.body)
   try {
-   let newCustomer = await Customer.create({
-      ...req.body,
-      // id: req.session.id,
-      
-    });
-    // let dataStorage = JSON.parse(fs.readFileSync("./seeds/customerData.json", "utf8"));
-    // dataStorage.push(NewBodyInfo)
-    // fs.writeFileSync('./seeds/customerData.json', JSON.stringify(dataStorage));
+   let newCustomer = await Customer.create(
+      req.body     
+    );
     res.status(200).json(newCustomer);
   } catch (err) {
     res.status(400).json(err);
@@ -36,7 +32,6 @@ router.delete('/:id', async (req, res) => {
     const customerData = await Customer.destroy({
       where: {
         id: req.params.id,
-        // id: req.session.id,
       },
     });
 
