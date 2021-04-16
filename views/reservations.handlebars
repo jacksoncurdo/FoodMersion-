@@ -1,16 +1,17 @@
-<div class="container">
-      <div class="jumbotron">
-        <h1 class="text-center">
+
+
+      <div class="jumbotron bg-green-900 rounded-full">
+        <h1 class="text-3xl bold">
           <span class="fa fa-fire"></span> FoodMersion
         </h1>
         <hr />
-        <h2 class="text-center">Make your reservation</h2>
+        <h2 class="text-center text-3xl bold ">Make your reservation</h2>
         <br />
         <div class="text-center">
           <a href="/login">
-            <button class="btn btn-lg btn-primary">
-              <span class="fa fa-list-alt"></span> See Your Reservation
-            </button>
+            <button class="bg-white rounded p-3 text-black mt-5">
+              <span class="fa fa-list-alt"></span> View reservations
+          </button>
           </a>
           <a href="/">
             <button class="btn btn-lg btn-default">
@@ -19,62 +20,53 @@
           </a>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <!-- Reservation Page -->
-          <div class="card">
+
+
+
+      
+          {{!-- card top --}}
+
+          <div class="card bg-green-900 rounded-full rounded-md">
             <div class="card-header">
               Table Reservation
             </div>
+          {{!-- card body --}}
             <div class="card-body">
               <form class = "reservation-form" role="form">
-                <div class="form-group">
+                <div class="">
                   <label for="reserve-name">Name</label>
-                  <input type="text" class="form-control" id="reserve-name" />
+                  <input type="text" class="form-control text-black " id="reserve-name" />
                 </div>
-                <div class="form-group">
+                <div class="">
                   <label for="reserve-phone">Phone Number</label>
                   <input type="text" class="form-control" id="reserve-phone" />
                 </div>
+                
+
                 <div class="form-group">
                   <label for="reserve-email">Email</label>
                   <input type="text" class="form-control" id="reserve-email" />
                 </div>
+
+
                 <div class="form-group">
-                  <label for="reserve-name">Date</label>
-                  <input type="text" class="form-control" id="reserve-name" />
-                </div>
+                  <label for="reservation_date">Reservation date</label>
+                  <input type="text" class="form-control" id="reservation_date" />
+                </div>          
+
                 <div class="form-group">
-                  <label for="reserve-name">Time</label>
-                  <input type="text" class="form-control" id="reserve-name" />
-                </div>
-                {{!-- <div class="form-group">
-                  <label for="reserve-unique-id">Unique ID</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="reserve-unique-id"
-                  />
-                </div> --}}
-                <button type="submit" class="btn btn-primary submit">
-                  Submit
+                  <label for="reservation_time">Reservation time</label>
+                  <input type="text" class="form-control" id="reservation_time" />
+                </div>      
+                <button type="submit" class="bg-white rounded p-3 text-black mt-2 submit">
+                 Submit
                 </button>
               </form>
             </div>
           </div>
-        </div>
-      </div>
 
-      {{!-- <footer class="footer">
-        <div class="container">
-          <p>
-            <a href="/api/tables">API Table Link</a> |
-            <a href="/api/waitlist">API Wait List</a>
-          </p>
-        </div>
-      </footer>
-    </div>
-  </body>
-</html> --}}
+        
 
+      
+<link rel="stylesheet" href="/css/reservation.css">
   <script src="./js/index.js"></script>
