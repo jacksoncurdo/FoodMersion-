@@ -1,0 +1,86 @@
+<div class="row">
+  <div class="col-auto">
+    <h2>Welcome to FoodMersion!</h2>
+  </div>
+</div>
+
+<div class="row mt-4">
+  {{#if drinksData.length}}
+  <div class="col-md-6 project-list">
+    <h3>Drinks</h3>
+    {{#each drinksData as |drinks|}}
+    <div class="row mb-2">
+      <h3>
+        {{drinks.prices}}
+      </h3>
+      <div class="col-md-8">
+        <h4>{{drinks.name}}</h4>
+      </div>
+      <p>
+        {{drinks.description}}       
+<div class="row mt-4 text-center">
+  <div class="col-md-6 project-list">
+    <h3>Drinks</h3>
+    {{#each drinks as |drink|}}
+    <div class="row mb-2">
+      <h3>
+        {{drink.prices}}
+      </h3>
+      <div class="col-md-8">
+        <h4>{{drink.name}}</h4>
+      </div>
+      <p class="text-center">
+        {{drink.description}}       
+      </p>
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}
+</div>
+
+</div>
+
+<div class="row mt-4">
+
+  <div class="col-md-6 project-list">
+    <h3>Entrees</h3>
+    {{#each menus as |entree|}}
+    <div class="row mb-2">
+      <h3>
+      {{entree.prices}}
+      </h3>
+      <div class="col-md-8">
+        <h4>{{entree.name}}</h4>
+      </div>
+      <p>
+        {{entree.description}}       
+      </p>
+    </div>
+    {{/each}}
+  </div>
+ 
+</div>
+
+<div class="row mt-4">
+  <div class="col-md-6 project-list">
+    <h3>Starters</h3>
+    {{#each starters as |starter|}}
+    <div class="row mb-2">
+      <h3>
+        {{starter.prices}}
+      </h3>
+      <div class="col-md-8">
+        <h4>{{starter.name}}</h4>
+      </div>
+      <p>
+        {{starter.description}}       
+      </p>
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}  
+</div>
+
+</div>
+
+{{!-- <script src="../public/js/index.js"></script> --}}
