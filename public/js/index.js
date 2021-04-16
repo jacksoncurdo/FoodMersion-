@@ -7,8 +7,11 @@ alert("clicked")
       name: document.getElementById('reserve-name').value.trim(),
       phone_number: document.getElementById('reserve-phone').value.trim(),
       email: document.getElementById('reserve-email').value.trim(),
+
       reservation_date: document.getElementById('reservation_date').value.trim(),
       reservation_time: document.getElementById('reservation_time').value.trim()
+
+
       // customerID: document.getElementById('reserve-unique-id').value.trim(),
     };
 
