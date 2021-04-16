@@ -41,7 +41,8 @@ router.get('/info', async (req, res) => {
   
     });
     let customers = customerData.map((project) => project.get({ plain: true }));
-    res.render('info',{customers });
+    console.log(customers)
+    res.render('info',{customers});
   } catch (err){throw err}
 });
 
