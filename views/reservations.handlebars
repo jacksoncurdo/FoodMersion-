@@ -1,0 +1,67 @@
+
+      <div class="jumbotron bg-green-900 rounded-full">
+        <h1 class="text-3xl bold">
+          <span class="fa fa-fire"></span> FoodMersion
+        </h1>
+        <hr />
+        <h2 class="text-center text-3xl bold ">Make your reservation</h2>
+        <br />
+        <div class="text-center">
+          <a href="/login">
+            <button class="bg-white rounded p-3 text-black mt-5">
+              <span class="fa fa-list-alt"></span> View reservations
+            </button>
+          </a>
+          <a href="/">
+            <button class="btn btn-lg btn-default">
+              <span class="fa fa-home"></span>
+            </button>
+          </a>
+        </div>
+      </div>
+
+
+      
+          {{!-- card top --}}
+
+          <div class="card bg-green-900 rounded-full rounded-md">
+            <div class="card-header">
+              Table Reservation
+            </div>
+          {{!-- card body --}}
+            <div class="card-body">
+              <form class = "reservation-form" role="form">
+                <div class="">
+                  <label for="reserve-name">Name</label>
+                  <input type="text" class="form-control text-black " id="reserve-name" />
+                </div>
+                <div class="">
+                  <label for="reserve-phone">Phone Number</label>
+                  <input type="text" class="form-control" id="reserve-phone" />
+                </div>
+                
+                <div class="form-group">
+                  <label for="reserve-email">Email</label>
+                  <input type="text" class="form-control" id="reserve-email" />
+                </div>
+
+                <div class="form-group">
+                  <label for="reservation_date">Reservation date</label>
+                  <input type="text" class="form-control" id="reservation_date" />
+                </div>          
+
+                <div class="form-group">
+                  <label for="reservation_time">Reservation time</label>
+                  <input type="text" class="form-control" id="reservation_time" />
+                </div>      
+                <button type="submit" class="bg-white rounded p-3 text-black mt-2 submit">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        
+
+      
+<link rel="stylesheet" href="/css/reservation.css">
+  <script src="./js/index.js"></script>

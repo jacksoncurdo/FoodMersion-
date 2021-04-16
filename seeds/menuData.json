@@ -1,15 +1,92 @@
 [
   {
-    "name": "Lasagna",
-    "description": "is an Italian dish made of stacked layers of thin flat pasta alternating with fillings such as ragù (ground meats and tomato sauce) and other vegetables, cheese (which may include ricotta and parmesan), and seasonings and spices such as garlic, oregano and basil.",
-    "prices": 10.99
-   
+    "name": "Bang-Bang Chicken and Shrimp",
+    "description": "A spicy thai dish with flavors of curry, peanut, chile and cocunut. Sauteed with vegetables and served over steamed white rice",
+    "prices": 14.99,
+    "category_name": "entree"
   },
   {
-    "name": "Pizza",
-    "description": "greasy, cheesy, delicious, welcoming smell, warm, crispy, crunchy, stretchy (cheese), filled with toppings, pepperoni, circle, slices!",
-    "prices": 13.99
-    
+    "name": "Fettuccine Chicken Alfredo",
+    "description": "This homemade alfredo sauce combines simple, fresh ingredients like butter, cream and parmesan cheese to make a rich topping to the fettuccine pasta. It is topped with tender sliced grilled chicken and then sprinkled with parsley",
+    "prices": 16.99,
+    "category_name": "entree"
+  },
+  {
+    "name": "Baja Chicken Tacos",
+    "description": "Soft corn tortillas filled with mildly spicy chicken, cheese, tomato, avacado, onion, chipotle, and cilantro. Served with rice and beans ",
+    "prices": 16.99,
+    "category_name": "entree"
+  },
+  {
+    "name": "Veggie Burrito Bowl",
+    "description": "Cilantro lime, black beans, pickled red onions, toasted corn, queso fresco, shredded lettuce, pico de gallo, lime crema and sliced avacado, topped with portobello mushrooms brushed with lime-cilantro chimichurri",
+    "prices": 14.99,
+    "category_name": "entree"
+  },
+  {
+    "name": "Spinach and Mushroom Flatbread Pizza",
+    "description": "Spinach and Mushrooms with mozzarella, parmesan, garlic, herbs, and extra virgin olive oil",
+    "prices": 15.99,
+    "category_name": "entree"
+  },
+  {
+    "name": "Parmesan-Herb Crusted Chicken",
+    "description": "Sauteed chicken breasts coated with parmesan-garlic breadcrumbs and herbs. Served with roasted potatoes and broccoli",
+    "prices": 17.99,
+    "category_name": "entree"
+  },
+  {
+    "name": "New York Strip",
+    "description": "A juicy, tender, 16 oz New York Strip beautifully seasoned and drizzled with garlic butter. Served with a baked sweet potato and green beans",
+    "prices": 24.99,
+    "category_name": "entree"
+  },
+  {
+    "name": "Fish Tacos",
+    "description": "Soft corn tortillas filled with crispy beer battered fish, avacado, tomato, chipotle sauce, marinated onions and cilantro. Served with rice and beans",
+    "prices": 15.99,
+    "category_name": "entree"
+  },
+  {
+    "name": " Italian Stuffed Shells",
+    "description": "Shells filled with 4 Italian cheeses, spinach, in a five cheese sauce with a creamy bechamel drizzle",
+    "prices": 14.99,
+    "category_name": "entree"
+  },
+  {
+    "name": "Spicy Cashew Chicken",
+    "description": "A very spicy Mandarin-style dish with green onions and roasted caashews. Served over white rice",
+    "prices": 16.99,
+    "category_name": "entree"
+  },
+  {
+    "name": "Fresh Grilled Salmon",
+    "description": "Fresh Salmon grilled to perfection, seasoned with salt and pepper, splashed with a hint of lemon juice. Served with fire-roasted asparagus and wild rice",
+    "prices": 18.99,
+    "category_name": "entree"
+  },
+  {
+    "name": "Thai Chicken Salad",
+    "description": "Satay chicken strips, lettuce, carrots, rice noodles, cucumbers, bean sprouts, cilantro, peanuts and sesame seeds tossed with Thai vinaigrette",
+    "prices": 13.99,
+    "category_name": "entree"
+  },
+  {
+    "name": "Sweet Potato Enchiladas",
+    "description": "Warm corn tortillas filled with roasted sweet potatoes, poblano peppers, onion and melted cheese. Covered with marcona-red chile salsa, sour cream, and toasted pepitas. Served with black beans and cilantro rice ",
+    "prices": 14.99,
+    "category_name": "entree"
+  },
+  {
+    "name": "Chicken Picata",
+    "description": "Sauteed chicken breast with lemon sauce, mushrooms and capers. Served with angel hair pasta",
+    "prices": 17.99,
+    "category_name": "entree"
+  },
+  {
+    "name": "Grilled Steak Medallions",
+    "description": "Grilled steak medallions served with fresh asparagus, shiitake mushrooms, sauteed cherry tomatoes, crusted croutons, mashed potatoes and madeira wine sauce",
+    "prices": 19.99,
+    "category_name": "entree"
   }
-  
 ]

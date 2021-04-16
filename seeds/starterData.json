@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Fried Calamari",
+        "description": "Fried Light and Crisp. Served with garlic dip and cocktail sauce",
+        "prices": 14.99,
+        "category_name": "starter"
+    },
+    {
+        "name": "Spincah & Artichoke Dip",
+        "description": "Spinach, Artichoke Hearts, Shallots, Garlic, and a mixture of cheeses. Served with garlic crostinis",
+        "prices": 11.99,
+        "category_name": "starter"
+    },
+    {
+        "name": "Chicken Pot Stickers",
+        "description": "Asian dumplings pan-fried in the classic tradition. Server with soy-ginger seaseme sauce",
+        "prices": 13.99,
+        "category_name": "starter"
+    },
+    {
+        "name": "Fire-Roasted Fresh Artichoke",
+        "description": "Fresh artichoke fired-roasted and served with garlic dip",
+        "prices": 10.99,
+        "category_name": "starter"
+    },
+    {
+        "name": "Crsipy Zucchini Fritte",
+        "description": "Crispy Zuchini served with a lemon aioli",
+        "prices": 11.99,
+        "category_name": "starter"
+    },
+    {
+        "name": "Pretzel Bites With Cheddar Cheese Fondue",
+        "description": "Baked soft and warm with cheddar cheese fondue and whole grain mustard",
+        "prices": 12.99,
+        "category_name": "starter"
+    },
+    {
+        "name": "Mozzarella Marinara",
+        "description": "Breaded mozzarella with a marinara sauce",
+        "prices": 11.99,
+        "category_name": "starter"
+    },
+    {
+        "name": "Brisket Quesadillas",
+        "description": "Brisket with sauteed onionsm and pickled jalepenos. Served with jalapeno-BBQ sauce, fresh guacamole, sour cream, pico de gallo",
+        "prices": 13.99,
+        "category_name": "starter"
+    },
+    {
+        "name": "Coconut Shrimp",
+        "description": "Hand-Dipped in batter, rolled in coconut and fried golden. Paired with a creole marmalade",
+        "prices": 14.99,
+        "category_name": "starter"
+    },
+    {
+        "name": "Melted Queso Fundido",
+        "description": "Melted Mexican and Monterey Jack cheeses mixed with carmelized onions, poblano peppers, and chorizo.Served with hand-pressed tortillas",
+        "prices": 12.99,
+        "category_name": "starter"
+    }
+]
