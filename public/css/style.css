@@ -1,33 +1,25 @@
-header, .project:not(:last-child) {
-  border-bottom: 1px solid #ccc;
-}
 
-.no-button {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  color: #1b89bc;
-  text-decoration: none;
-  font-size: 100%;
-}
-
-.no-button:hover {
-  color: #065b83;
-  text-decoration: underline;
-}
-
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
-}
 
 body{
-  background-color: lightslategray;
+  background-color:#1C2120;
   color:white;
   font-family: serif;
   text-align: center;
-
+/* margin-right:-20px; */
+}
+p{
+  color: #C07A35;
 }
 
+h3{
+  color: #F2C744
+}
+
+/* body{
+  background: url(https://images.unsplash.com/photo-1546195643-70f48f9c5b87?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} */
+/* change image url, take this out of here, and set it up with two other stylesheet. */

@@ -1,68 +1,77 @@
-<div class="row text-center">
-  <div class="col-auto">
-    <h2>Welcome to FoodMersion!</h2>
+
+
+<div>
+  <div>
+    <h2 class="text-3xl bold mb-8">Welcome to FoodMersion!</h2>
   </div>
 </div>
 
-<div class="row mt-4 text-center">
-  <div class="col-md-6 project-list">
-    <h3>Drinks</h3>
+
+  <div class="text-red-400">
+    <h3 class="text-3xl bold mb-8 bg-gray-900 ">Drinks</h3>
     {{#each drinks as |drink|}}
-    <div class="row mb-2">
-      <h3>
+    <div>
+      <span class="bg-blue-400 rounded-full pt-3 pb-3 pr-4 pl-4 text-white">
         {{drink.prices}}
-      </h3>
-      <div class="col-md-8">
-        <h4>{{drink.name}}</h4>
+      </span>
+      <div >
+        <h4 class="text-2xl mt-6">{{drink.name}}</h4>
       </div>
-      <p class="text-center">
-        {{drink.description}}       
+      <p class="mb-8 text-lg">
+     {{drink.description}}       
       </p>
     </div>
     {{/each}}
   </div>
 
-</div>
 
-<div class="row mt-4">
 
-  <div class="col-md-6 project-list">
-    <h3>Entrees</h3>
-    {{#each menus as |entree|}}
-    <div class="row mb-2">
-      <h3>
-      {{entree.prices}}
-      </h3>
-      <div class="col-md-8">
-        <h4>{{entree.name}}</h4>
-      </div>
-      <p>
-        {{entree.description}}       
-      </p>
-    </div>
-    {{/each}}
-  </div>
- 
-</div>
-
-<div class="row mt-4">
-  <div class="col-md-6 project-list">
-    <h3>Starters</h3>
+<div class="text-red-400">
+    <h3 class="text-3xl bold mb-8 mt-8 bg-gray-900 ">Starters</h3>
     {{#each starters as |starter|}}
-    <div class="row mb-2">
+    <div>
       <h3>
         {{starter.prices}}
       </h3>
-      <div class="col-md-8">
-        <h4>{{starter.name}}</h4>
+      <div>
+        <h4 class="text-2xl mt-6 ">
+          {{starter.name}}
+          </h4>
       </div>
-      <p>
+      <p class="text-lg">
         {{starter.description}}       
-      </p>
+   </p>
     </div>
     {{/each}}
   </div>
 
-</div>
+
+
+
+  <div class="text-center text-red-400">
+    <h3 class="text-3xl bold mb-8 bg-gray-900 mt-8 ">Entrees</h3>
+    {{#each menus as |entree|}}
+    <div class="mb-2">
+      
+        <h3>
+      {{entree.prices}}
+      </h3>
+      
+      <div class="">
+        <h4 class="text-2xl mt-6">{{entree.name}}</h4>
+      </div>
+      <p class="mb-8 text-lg ">
+        {{entree.description}}       
+
+ 
+     </p>
+    </div>
+    {{/each}}
+  </div>
+
+
+
+
+  {{!-- <link rel="stylesheet" href="/css/homepage.css"> --}}
 
 {{!-- <script src="../public/js/index.js"></script> --}}
