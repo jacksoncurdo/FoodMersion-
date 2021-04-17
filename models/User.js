@@ -35,6 +35,9 @@ User.init(
         len: [8],
       },
     },
+    user_id: {
+      type: DataTypes.INTEGER,
+    }
   },
   {
     hooks: {
