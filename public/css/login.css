@@ -1,0 +1,10 @@
+body{
+    background: url(https://images.unsplash.com/photo-1554830072-52d78d0d4c18?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8dGhhbmslMjB5b3V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* color: blue; */
+    font-size:x-large;
+    font-weight: 500;
+  }
