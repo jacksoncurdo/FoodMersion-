@@ -7,17 +7,19 @@
 </div>
 
 
-  <div class="text-red-400">
+  <div class="text-red-700">
     <h3 class="text-3xl bold mb-8 bg-gray-900 ">Drinks</h3>
     {{#each drinks as |drink|}}
     <div>
-      <span class="bg-blue-400 rounded-full pt-3 pb-3 pr-4 pl-4 text-white">
-        {{drink.prices}}
-      </span>
+      
       <div >
         <h4 class="text-2xl mt-6">{{drink.name}}</h4>
+        
       </div>
       <p class="mb-8 text-lg">
+        <span class="text-xl font-medium italic text-green-600 rounded-full  pr-2 pl-2">$
+        {{drink.prices}}.99
+      </span>
      {{drink.description}}       
       </p>
     </div>
@@ -26,19 +28,19 @@
 
 
 
-<div class="text-red-400">
+<div class="text-red-700">
     <h3 class="text-3xl bold mb-8 mt-8 bg-gray-900 ">Starters</h3>
     {{#each starters as |starter|}}
     <div>
-      <h3>
-        {{starter.prices}}
-      </h3>
       <div>
         <h4 class="text-2xl mt-6 ">
           {{starter.name}}
           </h4>
       </div>
       <p class="text-lg">
+        <span class="text-xl font-medium italic text-green-600 rounded-full  pr-2 pl-2">$
+        {{starter.prices}}.99
+      </span>
         {{starter.description}}       
    </p>
     </div>
@@ -48,23 +50,20 @@
 
 
 
-  <div class="text-center text-red-400">
+  <div class="text-center text-red-700">
     <h3 class="text-3xl bold mb-8 bg-gray-900 mt-8 ">Entrees</h3>
     {{#each menus as |entree|}}
-    <div class="mb-2">
-      
-        <h3>
-      {{entree.prices}}
-      </h3>
-      
-      <div class="">
+    <div class="mb-2">              
+      <div>
         <h4 class="text-2xl mt-6">{{entree.name}}</h4>
       </div>
       <p class="mb-8 text-lg ">
+        <span class="text-xl font-medium italic text-green-600 rounded-full  pr-2 pl-2">$
+        {{entree.prices}}.99
+      </span>
         {{entree.description}}       
 
- 
-     </p>
+      </p>
     </div>
     {{/each}}
   </div>
