@@ -1,7 +1,7 @@
 const submitBtn = document.querySelector('.reservation-form');
   submitBtn.addEventListener('submit', (e) => {
     e.preventDefault();
-alert("clicked")
+
     // Grab form elements
     let newReservation = {
       name: document.getElementById('reserve-name').value.trim(),
