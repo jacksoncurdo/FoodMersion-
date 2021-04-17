@@ -7,19 +7,19 @@
 <div class="row mt-4">
     <div class="col-md-6 project-list">
         <h3>Reservation</h3>
-        {{#each customer as |customers|}}
+        {{#each customers as |customer|}}
         <div class="row mb-2">
             <h3>
-                {{customers.name}}
+                {{customer.name}}
             </h3>
             <div class="col-md-8">
-                <h4>{{customers.phone_number}}</h4>
+                <h4>{{customer.phone_number}}</h4>
             </div>
             <p>
-                {{customers.email}}
+                {{customer.email}}
             </p>
         </div>
-        <h5>{{customers.reservation_date}} {{customers.reservation_time}}
+        <h5>{{customer.reservation_date}} {{customers.reservation_time}}
             <h5>
                 {{/each}}
     </div>
