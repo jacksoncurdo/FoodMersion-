@@ -87,7 +87,7 @@
   
 
   ## Deployed Application
-[You can visit our site on heroku](https://foodmersion.herokuapp.com/)
+[You can visit our site on heroku](https://evening-spire-50554.herokuapp.com/)
 
 
   ## Tests
